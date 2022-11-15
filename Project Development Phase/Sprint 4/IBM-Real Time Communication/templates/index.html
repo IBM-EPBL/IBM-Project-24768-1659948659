@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='new1.css') }}">
+        
+        Video Streaming Live Web Cam
+    </head>
+
+    <title>Real-Time Communication System Powered by AI for Specially Abled</title>
+    <style>
+	h1 {text-align: center;}
+      h2 {text-align: center;}
+      a {text-align: center;}
+    </style>
+    
+    
+    <body>
+        <div class="container">
+            <div class="row">
+                <h1 style="font-size:45px">Real-Time Communication System Powered by AI for Specially Abled</h1>
+                <h2 style="font-size:35px">Live Streaming</h3>
+                <a href="{{ url_for('video_feed') }}" class="btn btn-warning">Start</a>
+            </div>
+        </div>
+        <img class="one" src="{{ url_for('static', filename='hand-sign.jpg') }}" width="1000" height="400">
+        
+    </body>
+
+</html>

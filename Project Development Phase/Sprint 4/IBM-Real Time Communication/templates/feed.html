@@ -1,0 +1,9 @@
+<html>
+    <body style="color:#D4E4F7 ">
+    {{ cv2.capture(0) }}
+    <br>
+    {% for i in video_feed() %}
+        <h4>{{ i }}</h4> 
+    {% endfor %}
+    </body>
+</html>
